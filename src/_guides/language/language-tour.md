@@ -776,7 +776,7 @@ to see runes in action.
 
 {% comment %}
 https://gist.github.com/589bc5c95318696cefe5
-https://dartpad.dartlang.org/589bc5c95318696cefe5
+https://dartpad.dartlang.org/589bc5c95318696cefe5F
 Unicode emoji: http://unicode.org/emoji/charts/full-emoji-list.html
 
 <?code-excerpt "misc/lib/language_tour/built_in_types.dart (runes)"?>
@@ -3017,6 +3017,10 @@ void main() {
 If you override `==`, you should also override Object's `hashCode` getter.
 For an example of overriding `==` and `hashCode`, see
 [Implementing map keys](/guides/libraries/library-tour#implementing-map-keys).
+
+**Note:** You may have noticed that `!=` is not an overridable operator. 
+This is because `!=` is not an operator in its own right, the expression 
+`e1 != e2` is just syntactic sugar for `!(e1 == e2)`.
 
 For more information on overriding, in general, see
 [Extending a class](#extending-a-class).
